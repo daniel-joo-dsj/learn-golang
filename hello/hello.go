@@ -16,7 +16,7 @@ func main() {
 	// Request a greeting message
 	var message string
 	var err error
-	message, err = greetings.Hello("")
+	message, err = greetings.Hello("Daniel")
 
 	if err != nil {
 		log.Fatal(err)
