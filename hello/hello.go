@@ -13,15 +13,18 @@ func main() {
 	log.SetPrefix("greetings: ")
     log.SetFlags(0)
 
-	// Request a greeting message
-	var message string
+	// Create an array of names
+	names := []string{"Daniel", "Christian", "Mary"}
+
+	// Request greeting messages for the names
+	var messages map[string]string
 	var err error
-	message, err = greetings.Hello("Daniel")
+	messages, err = greetings.Hellos(names)
 
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	// If no error, print message
-	fmt.Println(message)
+	// If no error, print messages
+	fmt.Println(messages)
 }
