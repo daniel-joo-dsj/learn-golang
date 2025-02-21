@@ -4,4 +4,6 @@ use (
     ./page
     ./wiki
     ./handler
+    ./templates
+    ./validator
 )
